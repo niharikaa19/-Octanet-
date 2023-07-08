@@ -1,0 +1,158 @@
+/* styles.css */
+:root {
+  --main: grey ;
+  --accent: grey ;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: var(--main);
+}
+
+.carousel::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: wheat;
+ 
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent)
+}
+
+.carousel {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 3px;
+  display: flex;
+  overflow-x: scroll;
+  height: 800px;
+  width: 980px;
+  aspect-ratio: 15/9;
+  margin-bottom: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+img {
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.btns a {
+  text-decoration: none;
+  margin: 4px;  
+  color: wheat;
+  font-size: 1.5rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  .hero {
+    background-image: url("/Users/lallanawasthi/Desktop/Octanet/Project2/img/caa.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 700px; width: 1450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .featured-items {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .featured-items h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .item {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 10px;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .item p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+  }
+  
